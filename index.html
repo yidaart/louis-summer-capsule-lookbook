@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Louis 夏日胶囊衣橱 72 套核心 Look</title>
+  <title>Louis 个人穿搭管理系统</title>
   <style>
     :root {
       --ink: #24231f;
@@ -11,6 +11,7 @@
       --paper: #f6f2e9;
       --panel: #fffcf5;
       --line: #d8d0c1;
+      --soft: #eee7da;
       --charcoal: #373735;
       --olive: #58614c;
       --navy: #26384f;
@@ -37,21 +38,21 @@
       letter-spacing: 0;
     }
 
-    button, select { font: inherit; }
+    button, select, input { font: inherit; }
 
     .shell {
-      width: min(1480px, calc(100vw - 32px));
+      width: min(1500px, calc(100vw - 32px));
       margin: 0 auto;
-      padding: 28px 0 48px;
+      padding: 26px 0 52px;
     }
 
     .topbar {
       position: sticky;
       top: 0;
       z-index: 20;
-      margin: 0 -16px 22px;
+      margin: 0 -16px 18px;
       padding: 12px 16px;
-      background: rgba(246, 242, 233, .92);
+      background: rgba(246, 242, 233, .94);
       border-bottom: 1px solid rgba(36, 35, 31, .12);
       backdrop-filter: blur(18px);
     }
@@ -61,56 +62,38 @@
       grid-template-columns: 1fr auto;
       gap: 16px;
       align-items: center;
-      width: min(1480px, calc(100vw - 32px));
+      width: min(1500px, calc(100vw - 32px));
       margin: 0 auto;
     }
 
     h1 {
       margin: 0;
       font-family: Georgia, "Songti SC", serif;
-      font-size: clamp(28px, 4.2vw, 64px);
-      line-height: .95;
+      font-size: clamp(30px, 4vw, 62px);
+      line-height: .98;
       font-weight: 500;
       letter-spacing: 0;
     }
 
-    .kicker {
+    .kicker, .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       align-items: center;
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 14px;
     }
 
-    .mark {
-      width: 44px;
-      height: 44px;
-      display: grid;
-      place-items: center;
-      color: var(--panel);
-      background: var(--ink);
-      border-radius: 50%;
-      font-family: Georgia, serif;
-      font-size: 18px;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 8px;
-    }
+    .kicker { margin-top: 10px; color: var(--muted); font-size: 14px; }
+    .actions { justify-content: flex-end; }
 
     .btn, .chip {
-      min-height: 36px;
+      min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: rgba(255, 252, 245, .78);
       color: var(--ink);
-      padding: 8px 12px;
+      padding: 7px 11px;
       cursor: pointer;
+      white-space: nowrap;
     }
 
     .btn:hover, .chip:hover, .chip.active {
@@ -121,8 +104,8 @@
 
     .board {
       display: grid;
-      grid-template-columns: 310px 1fr;
-      gap: 22px;
+      grid-template-columns: 340px 1fr;
+      gap: 20px;
       align-items: start;
     }
 
@@ -130,13 +113,14 @@
       position: sticky;
       top: 86px;
       border: 1px solid var(--line);
-      background: rgba(255, 252, 245, .72);
-      padding: 18px;
-      min-height: 520px;
+      background: rgba(255, 252, 245, .76);
+      padding: 16px;
+      max-height: calc(100vh - 110px);
+      overflow: auto;
     }
 
-    .summary-title {
-      margin: 0 0 14px;
+    .section-title {
+      margin: 0 0 10px;
       font-size: 15px;
       font-weight: 700;
     }
@@ -145,93 +129,73 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .stat {
       border: 1px solid rgba(36, 35, 31, .14);
       background: rgba(246, 242, 233, .7);
       padding: 10px;
-      min-height: 72px;
+      min-height: 70px;
     }
 
-    .stat strong {
-      display: block;
-      font-size: 24px;
-      line-height: 1;
-      font-family: Georgia, serif;
-    }
+    .stat strong { display: block; font-family: Georgia, serif; font-size: 25px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--muted); font-size: 12px; }
 
-    .stat span {
-      display: block;
-      margin-top: 7px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
+    .weather-panel {
+      display: grid;
       gap: 8px;
       margin-bottom: 18px;
     }
 
-    .weather-strip {
-      display: grid;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-
-    .weather-day {
-      display: grid;
-      grid-template-columns: 42px 1fr;
-      gap: 9px;
-      align-items: center;
-      padding: 9px;
-      border: 1px solid rgba(36, 35, 31, .13);
+    .weather-now, .weather-day, .system-note {
+      border: 1px solid rgba(36,35,31,.13);
       background: rgba(246, 242, 233, .62);
+      padding: 10px;
     }
 
-    .weather-date {
-      font-family: Georgia, serif;
-      font-size: 18px;
-      line-height: 1;
-    }
+    .weather-now strong { display: block; font-size: 16px; }
+    .weather-now span, .weather-day span, .system-note { color: var(--muted); font-size: 12px; line-height: 1.5; }
 
-    .weather-meta {
-      min-width: 0;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
-    }
+    .weather-strip { display: grid; gap: 7px; }
+    .weather-day { display: grid; grid-template-columns: 46px 1fr; gap: 9px; align-items: center; }
+    .weather-date { font-family: Georgia, serif; font-size: 18px; line-height: 1; }
+    .weather-day b { display: block; font-size: 13px; }
 
-    .weather-meta strong {
-      display: block;
+    .control-group { margin-bottom: 18px; }
+    .chip-grid { display: flex; flex-wrap: wrap; gap: 7px; }
+
+    .search {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid var(--line);
+      background: var(--panel);
       color: var(--ink);
-      font-size: 13px;
-      font-weight: 700;
+      padding: 8px 10px;
+      margin-bottom: 9px;
+      border-radius: 0;
     }
 
-    .legend {
-      display: grid;
-      gap: 9px;
-      color: var(--muted);
-      font-size: 13px;
+    .select-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    select {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      padding: 8px;
+      border-radius: 0;
     }
 
-    .legend-row {
+    .selected-items { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+    .selected-items .chip { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+
+    .main-tools {
       display: grid;
-      grid-template-columns: 18px 1fr;
-      gap: 8px;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
       align-items: center;
-    }
-
-    .dot {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 1px solid rgba(36, 35, 31, .18);
-      background: var(--dot);
+      margin-bottom: 14px;
     }
 
     .gallery {
@@ -257,37 +221,14 @@
       padding: 14px 14px 8px;
     }
 
-    .id {
-      font-family: Georgia, serif;
-      font-size: 29px;
-      line-height: 1;
-    }
-
-    .scene {
-      text-align: right;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.4;
-    }
+    .id { font-family: Georgia, serif; font-size: 29px; line-height: 1; }
+    .scene { text-align: right; color: var(--muted); font-size: 12px; line-height: 1.4; }
 
     .fit-visual {
       margin: 0 14px;
       border: 1px solid rgba(36, 35, 31, .12);
-      background:
-        radial-gradient(circle at 22% 18%, rgba(255,255,255,.72) 0 2px, transparent 3px),
-        linear-gradient(135deg, rgba(255,255,255,.34), rgba(36,35,31,.05));
-      display: grid;
-      grid-template-columns: 88px 1fr;
-      gap: 14px;
-      align-items: center;
-      padding: 14px;
-    }
-
-    .photo-frame {
-      display: block;
-      padding: 0;
-      overflow: hidden;
       background: #e6e1d7;
+      overflow: hidden;
     }
 
     .look-photo {
@@ -299,188 +240,33 @@
       filter: saturate(.88) contrast(.98);
     }
 
-    .figure {
-      width: 78px;
-      height: 118px;
-      margin: 0 auto;
-      position: relative;
-    }
+    .details { padding: 12px 14px 14px; display: grid; gap: 8px; }
+    .row { display: grid; grid-template-columns: 42px 1fr; gap: 8px; align-items: baseline; font-size: 13px; line-height: 1.45; }
+    .row b { color: var(--muted); font-size: 12px; font-weight: 500; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 2px; }
+    .tag { border: 1px solid rgba(36,35,31,.14); color: var(--muted); font-size: 11px; padding: 4px 7px; background: rgba(246,242,233,.55); }
+    .note { margin-top: 2px; padding-top: 10px; border-top: 1px dashed rgba(36,35,31,.18); color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .empty { display: none; padding: 32px; color: var(--muted); border: 1px solid var(--line); background: var(--panel); }
 
-    .figure::before {
-      content: "";
-      position: absolute;
-      left: 28px;
-      top: 0;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: #c6a98d;
-      border: 1px solid rgba(36,35,31,.14);
-    }
-
-    .top-shape {
-      position: absolute;
-      left: 16px;
-      top: 25px;
-      width: 46px;
-      height: 42px;
-      border-radius: 11px 11px 5px 5px;
-      background: var(--top);
-      border: 1px solid rgba(36,35,31,.22);
-    }
-
-    .top-shape::before,
-    .top-shape::after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      width: 17px;
-      height: 24px;
-      background: var(--top);
-      border: 1px solid rgba(36,35,31,.18);
-    }
-
-    .top-shape::before {
-      left: -13px;
-      transform: rotate(15deg);
-      border-radius: 8px 0 8px 8px;
-    }
-
-    .top-shape::after {
-      right: -13px;
-      transform: rotate(-15deg);
-      border-radius: 0 8px 8px 8px;
-    }
-
-    .pants-shape {
-      position: absolute;
-      left: 19px;
-      top: 68px;
-      width: 40px;
-      height: 46px;
-      background:
-        linear-gradient(90deg, transparent 47%, rgba(36,35,31,.25) 48% 52%, transparent 53%),
-        var(--bottom);
-      border: 1px solid rgba(36,35,31,.22);
-      border-radius: 4px 4px 10px 10px;
-    }
-
-    .shoe-line {
-      position: absolute;
-      left: 12px;
-      bottom: 0;
-      width: 54px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--shoe);
-      border: 1px solid rgba(36,35,31,.2);
-    }
-
-    .swatches {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 7px;
-    }
-
-    .swatch {
-      height: 64px;
-      border: 1px solid rgba(36,35,31,.14);
-      background: var(--c);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .swatch::after {
-      content: attr(data-label);
-      position: absolute;
-      left: 6px;
-      right: 6px;
-      bottom: 5px;
-      color: rgba(255,255,255,.92);
-      text-shadow: 0 1px 2px rgba(0,0,0,.45);
-      font-size: 10px;
-      line-height: 1.1;
-    }
-
-    .details {
-      padding: 12px 14px 14px;
-      display: grid;
-      gap: 8px;
-    }
-
-    .row {
-      display: grid;
-      grid-template-columns: 42px 1fr;
-      gap: 8px;
-      align-items: baseline;
-      font-size: 13px;
-      line-height: 1.45;
-    }
-
-    .row b {
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 500;
-    }
-
-    .weather-pill {
-      display: grid;
-      grid-template-columns: 42px 1fr;
-      gap: 8px;
-      align-items: baseline;
-      padding: 8px 0 10px;
-      border-bottom: 1px dashed rgba(36,35,31,.18);
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
-    }
-
-    .weather-pill b {
-      color: var(--ink);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .note {
-      margin-top: 2px;
-      padding-top: 10px;
-      border-top: 1px dashed rgba(36,35,31,.18);
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    .empty {
-      display: none;
-      padding: 32px;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      background: var(--panel);
-    }
-
-    @media (max-width: 920px) {
-      .topbar-inner, .board { grid-template-columns: 1fr; }
+    @media (max-width: 960px) {
+      .topbar-inner, .board, .main-tools { grid-template-columns: 1fr; }
       .actions { justify-content: start; }
-      aside { position: static; min-height: auto; }
+      aside { position: static; max-height: none; }
     }
 
     @media (max-width: 560px) {
-      .shell { width: min(100vw - 18px, 1480px); padding-top: 14px; }
+      .shell { width: min(100vw - 18px, 1500px); padding-top: 14px; }
       .topbar { margin: 0 -9px 14px; }
       .gallery { grid-template-columns: 1fr; }
-      .card { min-height: 0; }
       .card { grid-template-rows: auto 460px 1fr; }
-      .fit-visual { grid-template-columns: 76px 1fr; padding: 10px; gap: 10px; }
-      .photo-frame { padding: 0; }
-      .swatch { height: 54px; }
+      .select-row { grid-template-columns: 1fr; }
     }
 
     @media print {
       body { background: #fff; }
       .topbar, aside { position: static; }
-      .actions, .filters { display: none; }
+      .actions, .control-group, .main-tools { display: none; }
       .board { display: block; }
-      aside { min-height: 0; margin-bottom: 14px; }
       .gallery { grid-template-columns: repeat(3, 1fr); gap: 8px; }
       .card { break-inside: avoid; min-height: 385px; }
     }
@@ -490,16 +276,17 @@
   <div class="topbar">
     <div class="topbar-inner">
       <div>
-        <h1>Louis 夏日胶囊衣橱 72 套核心 Look</h1>
+        <h1>Louis 个人穿搭管理系统</h1>
         <div class="kicker">
-          <span>干净城市日杂风</span>
-          <span>低饱和城市休闲</span>
-          <span>轻机能</span>
-          <span>松弛通勤</span>
+          <span>单品库驱动</span>
+          <span>实时天气</span>
+          <span>四季扩展</span>
+          <span>72 套夏日 Look</span>
         </div>
       </div>
       <div class="actions">
-        <button class="btn" type="button" id="showAll">全部</button>
+        <button class="btn" type="button" id="resetBtn">重置筛选</button>
+        <button class="btn" type="button" id="todayBtn">按今日天气推荐</button>
         <button class="btn" type="button" id="printBtn">打印 / 存 PDF</button>
       </div>
     </div>
@@ -508,32 +295,49 @@
   <main class="shell">
     <section class="board">
       <aside>
-        <div class="mark">72</div>
-        <h2 class="summary-title">图册索引</h2>
+        <h2 class="section-title">系统索引</h2>
         <div class="stat-grid">
-          <div class="stat"><strong id="visibleCount">72</strong><span>当前显示</span></div>
-          <div class="stat"><strong>7</strong><span>高频上衣轴</span></div>
-          <div class="stat"><strong>9</strong><span>主力裤装轴</span></div>
-          <div class="stat"><strong>4</strong><span>鞋履变化</span></div>
+          <div class="stat"><strong id="visibleCount">0</strong><span>当前显示</span></div>
+          <div class="stat"><strong id="lookCount">0</strong><span>Look 总数</span></div>
+          <div class="stat"><strong id="itemCount">0</strong><span>单品数量</span></div>
+          <div class="stat"><strong>v1</strong><span>JSON 数据版</span></div>
         </div>
 
-        <h2 class="summary-title">场景筛选</h2>
-        <div class="filters" id="filters"></div>
+        <h2 class="section-title">福州仓山实时天气</h2>
+        <div class="weather-panel">
+          <div class="weather-now" id="weatherNow"><strong>天气加载中</strong><span>正在读取近 7 天天气。</span></div>
+          <div class="weather-strip" id="weatherStrip"></div>
+        </div>
 
-        <h2 class="summary-title">福州仓山 7 天天气</h2>
-        <div class="weather-strip" id="weatherStrip"></div>
+        <div class="control-group">
+          <h2 class="section-title">单品筛选</h2>
+          <input class="search" id="itemSearch" type="search" placeholder="搜索单品，例如 黑色 T / 军绿 / 德训鞋">
+          <div class="chip-grid" id="categoryFilters"></div>
+          <div class="chip-grid" id="itemFilters"></div>
+          <div class="selected-items" id="selectedItems"></div>
+        </div>
 
-        <h2 class="summary-title">色彩图例</h2>
-        <div class="legend">
-          <div class="legend-row"><i class="dot" style="--dot: var(--charcoal)"></i><span>黑 / 炭灰：主线干净通勤</span></div>
-          <div class="legend-row"><i class="dot" style="--dot: var(--cream)"></i><span>奶油白 / 浅米：提亮但不漂</span></div>
-          <div class="legend-row"><i class="dot" style="--dot: var(--olive)"></i><span>军绿 / 橄榄：轻机能、微山系</span></div>
-          <div class="legend-row"><i class="dot" style="--dot: var(--coffee)"></i><span>深咖：轻复古、成熟</span></div>
-          <div class="legend-row"><i class="dot" style="--dot: var(--blue)"></i><span>藏蓝 / 蓝盘：夏天的低饱和点缀</span></div>
+        <div class="control-group">
+          <h2 class="section-title">辅助筛选</h2>
+          <div class="select-row">
+            <select id="seasonFilter" aria-label="季节筛选"></select>
+            <select id="weatherFilter" aria-label="天气筛选"></select>
+            <select id="sceneFilter" aria-label="场景筛选"></select>
+            <select id="colorFilter" aria-label="颜色筛选"></select>
+          </div>
+        </div>
+
+        <h2 class="section-title">新增单品方式</h2>
+        <div class="system-note">
+          v1 暂不接后台。新增单品先改 <code>data/items.json</code>，新增穿搭改 <code>data/looks.json</code>，图片放进 <code>assets/louis-summer-looks/</code>。以后需要手机端新增、登录和同步时，再把 JSON 数据源替换成后台数据库。
         </div>
       </aside>
 
       <section>
+        <div class="main-tools">
+          <div class="kicker" id="activeSummary">正在加载数据。</div>
+          <div class="actions"><button class="btn" type="button" id="clearItemsBtn">清空单品</button></div>
+        </div>
         <div class="gallery" id="gallery"></div>
         <div class="empty" id="empty">没有符合条件的 Look。</div>
       </section>
@@ -541,294 +345,225 @@
   </main>
 
   <script>
-    const looks = [
-      ["01","日常通勤","黑色重磅圆领 T","黑色垂感西裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","黑 T + 黑西裤压住成熟感，棕色鞋把气氛放松。"],
-      ["02","日常通勤","黑色重磅圆领 T","炭灰直筒裤","灰白 gum 底德训 / 板鞋","黑色皮质托特 / 斜挎包","透明灰浅茶镜片窄矩形眼镜","黑灰同色系，适合不用想的上班日。"],
-      ["03","轻机能","黑色重磅圆领 T","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","城市机能感最稳的一套，干净但有户外味。"],
-      ["04","松弛通勤","黑色重磅圆领 T","卡其宽松长裤","棕色德训鞋","黑色皮质托特 / 斜挎包","小号银色耳环 / 耳圈","黑上衣收住轮廓，卡其裤负责松弛。"],
-      ["05","周末城市","黑色重磅圆领 T","灰褐色松紧腰打褶宽裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","偏日杂的宽裤 Look，舒服但不邋遢。"],
-      ["06","轻复古","黑色重磅圆领 T","浅米竖纹宽裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","上黑下浅，金绿表盘增加一点复古感。"],
-      ["07","雨天防晒","黑色重磅圆领 T","黑色兰精天丝微喇运动裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","黑色底层配军绿外层，轻机能清爽。"],
-      ["08","饭局约会","黑色重磅圆领 T","深咖微喇卫裤","深咖复古机能运动鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","深咖强化成熟感，卫裤保留松弛。"],
-      ["09","短途出行","黑色重磅圆领 T","灰色 646 卫裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","运动感更强，适合高走动量的一天。"],
-      ["10","周末城市","黑色重磅圆领 T","深咖宽松短裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","短裤只做低频点缀，配黑 T 更稳。"],
-      ["11","防晒出门","黑色重磅圆领 T","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","全身深色但材质轻，适合暴晒外出。"],
-      ["12","通勤备用","黑色重磅圆领 T","炭灰直筒裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","鞋和表带出一点暖色，不会显得太硬。"],
+    const DATA = { items: [], looks: [] };
+    const selectedItemIds = new Set();
+    let activeCategory = 'all';
+    let currentWeatherTag = '';
 
-      ["13","日常通勤","奶油白重磅圆领 T","黑色垂感西裤","灰白 gum 底德训 / 板鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","最干净的夏日通勤公式，白 T 提气色。"],
-      ["14","松弛通勤","奶油白重磅圆领 T","炭灰直筒裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","透明灰浅茶镜片窄矩形眼镜","奶油白比纯白柔和，和炭灰更日系。"],
-      ["15","轻机能","奶油白重磅圆领 T","军绿微工装裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","白 T 让军绿不显脏，整体更城市。"],
-      ["16","周末城市","奶油白重磅圆领 T","卡其宽松长裤","棕色德训鞋","黑色皮质托特 / 斜挎包","小号银色耳环 / 耳圈","浅色系的日杂主力，注意用黑包压住。"],
-      ["17","日杂宽裤","奶油白重磅圆领 T","灰褐色松紧腰打褶宽裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","宽裤负责空气感，灰褐色比卡其更成熟。"],
-      ["18","轻复古","奶油白重磅圆领 T","浅米竖纹宽裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","浅色叠浅色，适合干净天气和咖啡场景。"],
-      ["19","雨天防晒","奶油白重磅圆领 T","黑色兰精天丝微喇运动裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","白、黑、军绿三色平衡，耐看。"],
-      ["20","短途出行","奶油白重磅圆领 T","灰色 646 卫裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","鞋子有运动复古元素，其他单品保持安静。"],
-      ["21","饭局约会","奶油白重磅圆领 T","深咖微喇卫裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","深咖和金绿表盘呼应，轻熟但不商务。"],
-      ["22","防晒出门","奶油白重磅圆领 T","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","上白下蓝，夏天感更明确。"],
+    const categoryLabels = {
+      all: '全部', tops: '上衣', outerwear: '外层', bottoms: '裤装', shoes: '鞋', bags: '包', accessories: '配饰'
+    };
+    const seasonLabels = { all: '全部季节', summer: '夏装', autumn: '秋装', winter: '冬装', spring: '春装' };
+    const weatherLabels = { all: '全部天气', sunny: '晴热/防晒', cloudy: '阴天/多云', rain: '雨天', evening: '傍晚/饭局', weekend: '周末', commute: '通勤' };
+    const colorLabels = { all: '全部颜色', black: '黑色', charcoal: '炭灰', gray: '灰色', greige: '灰褐', cream: '奶油白', beige: '米色', khaki: '卡其', olive: '军绿', sage: '鼠尾草绿', coffee: '深咖', brown: '棕色', navy: '藏蓝', pink: '水洗粉', blue: '蓝色', green: '绿色', silver: '银色', neutral: '中性色' };
 
-      ["23","日常通勤","炭灰短袖针织","黑色垂感西裤","棕色德训鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","针织比 T 更有质感，适合稍正式的一天。"],
-      ["24","松弛通勤","炭灰短袖针织","卡其宽松长裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","透明灰浅茶镜片窄矩形眼镜","炭灰配卡其，低调但有层次。"],
-      ["25","周末城市","炭灰短袖针织","灰褐色松紧腰打褶宽裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","同属灰褐体系，鞋用棕色补温度。"],
-      ["26","日杂宽裤","炭灰短袖针织","浅米竖纹宽裤","灰白 gum 底德训 / 板鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","上深下浅，竖纹宽裤让比例更轻。"],
-      ["27","轻机能","炭灰短袖针织","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","针织上衣中和工装裤的硬度。"],
-      ["28","饭局约会","炭灰短袖针织","深咖微喇卫裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","深色针织 + 深咖裤，低调成熟。"],
-      ["29","雨天防晒","炭灰短袖针织","黑色兰精天丝微喇运动裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","外层军绿只露一点，增强轻机能。"],
-      ["30","短途出行","炭灰短袖针织","灰色 646 卫裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","针织提升卫裤质感，避免太居家。"],
-      ["31","防晒出门","炭灰短袖针织","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","蓝灰组合安静，适合户外通勤。"],
-
-      ["32","饭局约会","黑色古巴领衬衫","黑色垂感西裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","最接近轻熟饭局的一套，鞋子保留休闲。"],
-      ["33","日常通勤","黑色古巴领衬衫","炭灰直筒裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","古巴领比普通衬衫松弛，适合夏天。"],
-      ["34","周末城市","黑色古巴领衬衫","浅米竖纹宽裤","棕色德训鞋","黑色皮质托特 / 斜挎包","透明灰浅茶镜片窄矩形眼镜","黑衬衫和浅米裤形成清楚轮廓。"],
-      ["35","轻复古","黑色古巴领衬衫","深咖微喇卫裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","黑咖组合偏复古，适合晚上出门。"],
-      ["36","松弛通勤","黑色古巴领衬衫","灰褐色松紧腰打褶宽裤","棕色德训鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","衬衫和宽裤组合，有通勤感但不紧。"],
-      ["37","轻机能","黑色古巴领衬衫","军绿微工装裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","古巴领让工装裤更城市，不像纯户外。"],
-      ["38","短途出行","黑色古巴领衬衫","黑色兰精天丝微喇运动裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","全身深色，用材质差异做层次。"],
-      ["39","防晒出门","黑色古巴领衬衫","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","衬衫和短裤的反差，适合低频穿。"],
-
-      ["40","日常通勤","黑色撞色明线翻领短袖针织 / 针织 POLO","黑色垂感西裤","灰白 gum 底德训 / 板鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","POLO 是质感主力，比 T 更完整。"],
-      ["41","饭局约会","黑色撞色明线翻领短袖针织 / 针织 POLO","深咖微喇卫裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","天梭金表绿盘","明线细节增加精致度，深咖偏成熟。"],
-      ["42","松弛通勤","黑色撞色明线翻领短袖针织 / 针织 POLO","炭灰直筒裤","棕色德训鞋","黑色皮质托特 / 斜挎包","透明灰浅茶镜片窄矩形眼镜","黑灰主线，适合重要但非正式的日子。"],
-      ["43","周末城市","黑色撞色明线翻领短袖针织 / 针织 POLO","灰褐色松紧腰打褶宽裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","翻领和宽裤让整体松弛但有边界。"],
-      ["44","日杂宽裤","黑色撞色明线翻领短袖针织 / 针织 POLO","浅米竖纹宽裤","棕色德训鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","黑上浅下，最像日杂目录的一套。"],
-      ["45","轻机能","黑色撞色明线翻领短袖针织 / 针织 POLO","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","质感上衣压住工装裤，适合城市走动。"],
-      ["46","雨天防晒","黑色撞色明线翻领短袖针织 / 针织 POLO","黑色兰精天丝微喇运动裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","黑色底盘，军绿外套只负责功能和层次。"],
-      ["47","短途出行","黑色撞色明线翻领短袖针织 / 针织 POLO","灰色 646 卫裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","把复古板鞋作为唯一跳点。"],
-
-      ["48","日常通勤","浅杏 / 奶油米翻领短袖针织","黑色垂感西裤","棕色德训鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","浅色针织配黑西裤，清爽又稳。"],
-      ["49","松弛通勤","浅杏 / 奶油米翻领短袖针织","炭灰直筒裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","透明灰浅茶镜片窄矩形眼镜","比白 T 更有质感，通勤优先级高。"],
-      ["50","周末城市","浅杏 / 奶油米翻领短袖针织","卡其宽松长裤","棕色德训鞋","黑色皮质托特 / 斜挎包","小号银色耳环 / 耳圈","暖色系成套穿，用黑包做收口。"],
-      ["51","日杂宽裤","浅杏 / 奶油米翻领短袖针织","灰褐色松紧腰打褶宽裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","低饱和浅色组合，很适合白天。"],
-      ["52","轻复古","浅杏 / 奶油米翻领短袖针织","深咖微喇卫裤","棕色德训鞋","黑色皮质托特 / 斜挎包","天梭金表绿盘","杏色和深咖是最稳的轻复古配色。"],
-      ["53","轻机能","浅杏 / 奶油米翻领短袖针织","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","米色针织让军绿更柔和。"],
-      ["54","短途出行","浅杏 / 奶油米翻领短袖针织","灰色 646 卫裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","舒适优先，但翻领避免太随便。"],
-      ["55","防晒出门","浅杏 / 奶油米翻领短袖针织","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","奶油米和藏蓝对比干净。"],
-
-      ["56","轻机能","橄榄灰 / 鼠尾草绿色纯色短袖 T","黑色垂感西裤","灰白 gum 底德训 / 板鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","鼠尾草绿给黑西裤降正式感。"],
-      ["57","日常通勤","橄榄灰 / 鼠尾草绿色纯色短袖 T","炭灰直筒裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","透明灰浅茶镜片窄矩形眼镜","低饱和绿灰配炭灰，很耐看。"],
-      ["58","周末城市","橄榄灰 / 鼠尾草绿色纯色短袖 T","灰褐色松紧腰打褶宽裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","接近自然色系，但还是城市。"],
-      ["59","轻机能","橄榄灰 / 鼠尾草绿色纯色短袖 T","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","同色系绿要靠黑包和深咖鞋压住。"],
-      ["60","松弛通勤","橄榄灰 / 鼠尾草绿色纯色短袖 T","卡其宽松长裤","棕色德训鞋","黑色皮质托特 / 斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","卡其和绿灰的夏季通勤组合。"],
-      ["61","轻复古","橄榄灰 / 鼠尾草绿色纯色短袖 T","深咖微喇卫裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","天梭金表绿盘","绿灰和深咖偏复古，表盘可呼应。"],
-      ["62","雨天防晒","橄榄灰 / 鼠尾草绿色纯色短袖 T","黑色兰精天丝微喇运动裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","绿外套和绿 T 有层次，不做同色套装。"],
-
-      ["63","周末城市","灰色背后印花 T","黑色垂感西裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","印花只做背面变化，正面仍然干净。"],
-      ["64","短途出行","藏蓝背后印花 T","卡其宽松长裤","白蓝红棒球元素复古板鞋","黑色软皮月牙单肩斜挎包","华为 FreeClip 2 耳夹耳机","藏蓝呼应鞋面蓝色，适合周末。"],
-      ["65","周末城市","灰色李小龙印花 T","军绿微工装裤","深咖复古机能运动鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","印花有个性，裤鞋保持低饱和。"],
-      ["66","低频点缀","水洗粉色宽松短袖 T","炭灰直筒裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","雪铁纳 PH200M 蓝盘米兰钢带","粉色只做单点，裤鞋包全部降噪。"],
-      ["67","层次点缀","黑色 V 领无袖针织背心","奶油白重磅圆领 T + 黑色垂感西裤","棕色德训鞋","黑色皮质托特 / 斜挎包","透明灰浅茶镜片窄矩形眼镜","背心低频使用，叠白 T 更干净。"],
-      ["68","层次点缀","黑色 V 领无袖针织背心","浅米竖纹宽裤 + 奶油白重磅圆领 T","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","小号银色耳环 / 耳圈","上身有层次，下身用浅米宽裤提轻。"],
-      ["69","防晒出门","灰色背后印花 T","黑色兰精天丝微喇运动裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","军绿轻薄防晒衣","灰黑底盘加军绿外套，实用优先。"],
-      ["70","短裤低频","橄榄灰 / 鼠尾草绿色纯色短袖 T","深咖宽松短裤","棕色德训鞋","黑色软皮月牙单肩斜挎包","华为 GT2 Pro 运动手表","短裤和绿 T 有休闲感，鞋包保持成熟。"],
-      ["71","短裤低频","黑色古巴领衬衫","深咖宽松短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","天梭金表绿盘","短裤搭衬衫，适合傍晚或旅行场景。"],
-      ["72","防晒出门","藏蓝背后印花 T","深藏蓝轻薄防晒短裤","灰白 gum 底德训 / 板鞋","黑色软皮月牙单肩斜挎包","深藏蓝轻薄防晒外套（连帽）","藏蓝成套时，用灰白鞋打破沉闷。"]
-    ].map(([id, scene, top, bottom, shoe, bag, extra, note]) => ({ id, scene, top, bottom, shoe, bag, extra, note }));
-
-    const weeklyWeather = [
-      { date: "6/10", day: "周三", text: "阴", temp: "25-34C", uv: "UV 弱", cue: "闷热但光线柔和，适合深色通勤。" },
-      { date: "6/11", day: "周四", text: "阴", temp: "26-35C", uv: "UV 弱", cue: "低饱和浅色能提气色，外出注意透气。" },
-      { date: "6/12", day: "周五", text: "多云间晴", temp: "26-36C", uv: "UV 中", cue: "适合奶油白、浅米、灰褐宽裤。" },
-      { date: "6/13", day: "周六", text: "阵雨转雷阵雨", temp: "25-32C", uv: "UV 弱", cue: "轻薄防晒衣和机能鞋优先。" },
-      { date: "6/14", day: "周日", text: "强降雨转阴", temp: "24-29C", uv: "UV 弱", cue: "深色、耐脏、快干材质更稳。" },
-      { date: "6/15", day: "周一", text: "雨", temp: "24-30C", uv: "UV 弱", cue: "黑灰军绿组合，减少浅色裤装。" },
-      { date: "6/16", day: "周二", text: "阵雨雷阵雨转雨", temp: "24-31C", uv: "UV 弱", cue: "保留防晒外套，鞋履选防滑底。" }
-    ];
-
-    const lookImages = {
-      "01": "assets/louis-summer-looks/look-01.jpg",
-      "02": "assets/louis-summer-looks/look-02.jpg",
-      "03": "assets/louis-summer-looks/look-03.jpg",
-      "04": "assets/louis-summer-looks/look-04.jpg",
-      "05": "assets/louis-summer-looks/look-05.jpg",
-      "06": "assets/louis-summer-looks/look-06.jpg",
-      "07": "assets/louis-summer-looks/look-07.jpg",
-      "08": "assets/louis-summer-looks/look-08.jpg",
-      "09": "assets/louis-summer-looks/look-09.jpg",
-      "10": "assets/louis-summer-looks/look-10.jpg",
-      "11": "assets/louis-summer-looks/look-11.jpg",
-      "12": "assets/louis-summer-looks/look-12.jpg",
-      "13": "assets/louis-summer-looks/look-13.jpg",
-      "14": "assets/louis-summer-looks/look-14.jpg",
-      "15": "assets/louis-summer-looks/look-15.jpg",
-      "16": "assets/louis-summer-looks/look-16.jpg",
-      "17": "assets/louis-summer-looks/look-17.jpg",
-      "18": "assets/louis-summer-looks/look-18.jpg",
-      "19": "assets/louis-summer-looks/look-19.jpg",
-      "20": "assets/louis-summer-looks/look-20.jpg",
-      "21": "assets/louis-summer-looks/look-21.jpg",
-      "22": "assets/louis-summer-looks/look-22.jpg",
-      "23": "assets/louis-summer-looks/look-23.jpg",
-      "24": "assets/louis-summer-looks/look-24.jpg",
-      "25": "assets/louis-summer-looks/look-25.jpg",
-      "26": "assets/louis-summer-looks/look-26.jpg",
-      "27": "assets/louis-summer-looks/look-27.jpg",
-      "28": "assets/louis-summer-looks/look-28.jpg",
-      "29": "assets/louis-summer-looks/look-29.jpg",
-      "30": "assets/louis-summer-looks/look-30.jpg",
-      "31": "assets/louis-summer-looks/look-31.jpg",
-      "32": "assets/louis-summer-looks/look-32.jpg",
-      "33": "assets/louis-summer-looks/look-33.jpg",
-      "34": "assets/louis-summer-looks/look-34.jpg",
-      "35": "assets/louis-summer-looks/look-35.jpg",
-      "36": "assets/louis-summer-looks/look-36.jpg",
-      "37": "assets/louis-summer-looks/look-37.jpg",
-      "38": "assets/louis-summer-looks/look-38.jpg",
-      "39": "assets/louis-summer-looks/look-39.jpg",
-      "40": "assets/louis-summer-looks/look-40.jpg",
-      "41": "assets/louis-summer-looks/look-41.jpg",
-      "42": "assets/louis-summer-looks/look-42.jpg",
-      "43": "assets/louis-summer-looks/look-43.jpg",
-      "44": "assets/louis-summer-looks/look-44.jpg",
-      "45": "assets/louis-summer-looks/look-45.jpg",
-      "46": "assets/louis-summer-looks/look-46.jpg",
-      "47": "assets/louis-summer-looks/look-47.jpg",
-      "48": "assets/louis-summer-looks/look-48.jpg",
-      "49": "assets/louis-summer-looks/look-49.jpg",
-      "50": "assets/louis-summer-looks/look-50.jpg",
-      "51": "assets/louis-summer-looks/look-51.jpg",
-      "52": "assets/louis-summer-looks/look-52.jpg",
-      "53": "assets/louis-summer-looks/look-53.jpg",
-      "54": "assets/louis-summer-looks/look-54.jpg",
-      "55": "assets/louis-summer-looks/look-55.jpg",
-      "56": "assets/louis-summer-looks/look-56.jpg",
-      "57": "assets/louis-summer-looks/look-57.jpg",
-      "58": "assets/louis-summer-looks/look-58.jpg",
-      "59": "assets/louis-summer-looks/look-59.jpg",
-      "60": "assets/louis-summer-looks/look-60.jpg",
-      "61": "assets/louis-summer-looks/look-61.jpg",
-      "62": "assets/louis-summer-looks/look-62.jpg",
-      "63": "assets/louis-summer-looks/look-63.jpg",
-      "64": "assets/louis-summer-looks/look-64.jpg",
-      "65": "assets/louis-summer-looks/look-65.jpg",
-      "66": "assets/louis-summer-looks/look-66.jpg",
-      "67": "assets/louis-summer-looks/look-67.jpg",
-      "68": "assets/louis-summer-looks/look-68.jpg",
-      "69": "assets/louis-summer-looks/look-69.jpg",
-      "70": "assets/louis-summer-looks/look-70.jpg",
-      "71": "assets/louis-summer-looks/look-71.jpg",
-      "72": "assets/louis-summer-looks/look-72.jpg"
+    const weatherCodeMap = {
+      0: ['晴', 'sunny'], 1: ['大部晴朗', 'sunny'], 2: ['多云', 'cloudy'], 3: ['阴', 'cloudy'],
+      45: ['雾', 'cloudy'], 48: ['雾凇', 'cloudy'], 51: ['小毛毛雨', 'rain'], 53: ['毛毛雨', 'rain'], 55: ['较强毛毛雨', 'rain'],
+      61: ['小雨', 'rain'], 63: ['中雨', 'rain'], 65: ['大雨', 'rain'], 80: ['阵雨', 'rain'], 81: ['阵雨', 'rain'], 82: ['强阵雨', 'rain'],
+      95: ['雷阵雨', 'rain'], 96: ['雷阵雨伴冰雹', 'rain'], 99: ['强雷阵雨伴冰雹', 'rain']
     };
 
-    const colorRules = [
-      [/水洗粉|粉色/, "#d8a8a8"],
-      [/奶油|浅杏|浅米|米/, "#e9ddc8"],
-      [/白蓝红/, "linear-gradient(135deg, #f3f0e8 0 42%, #496b95 43% 62%, #b8483e 63%)"],
-      [/蓝盘|藏蓝|深藏蓝/, "#26384f"],
-      [/军绿|橄榄|鼠尾草|绿盘/, "#58614c"],
-      [/深咖|棕色|咖/, "#5a4638"],
-      [/卡其/, "#a89167"],
-      [/灰褐/, "#7c7668"],
-      [/炭灰|深灰|灰色|灰白|银色|透明灰/, "#8b8b83"],
-      [/黑色|黑 T|黑西裤|黑包/, "#262624"]
-    ];
+    const els = {
+      gallery: document.querySelector('#gallery'), empty: document.querySelector('#empty'), visibleCount: document.querySelector('#visibleCount'),
+      lookCount: document.querySelector('#lookCount'), itemCount: document.querySelector('#itemCount'), itemSearch: document.querySelector('#itemSearch'),
+      categoryFilters: document.querySelector('#categoryFilters'), itemFilters: document.querySelector('#itemFilters'), selectedItems: document.querySelector('#selectedItems'),
+      seasonFilter: document.querySelector('#seasonFilter'), weatherFilter: document.querySelector('#weatherFilter'), sceneFilter: document.querySelector('#sceneFilter'),
+      colorFilter: document.querySelector('#colorFilter'), weatherNow: document.querySelector('#weatherNow'), weatherStrip: document.querySelector('#weatherStrip'),
+      activeSummary: document.querySelector('#activeSummary')
+    };
 
-    const scenes = ["全部", ...Array.from(new Set(looks.map(look => look.scene)))];
-    const gallery = document.querySelector("#gallery");
-    const filters = document.querySelector("#filters");
-    const weatherStrip = document.querySelector("#weatherStrip");
-    const visibleCount = document.querySelector("#visibleCount");
-    const empty = document.querySelector("#empty");
+    function itemById(id) { return DATA.items.find(item => item.id === id); }
+    function labelFrom(map, key) { return map[key] || key; }
 
-    function colorFor(text) {
-      const found = colorRules.find(([rule]) => rule.test(text));
-      return found ? found[1] : "#b7aa96";
+    function formatDate(iso) {
+      const date = new Date(`${iso}T00:00:00+08:00`);
+      return `${date.getMonth() + 1}/${date.getDate()}`;
     }
 
-    function renderFilters() {
-      filters.innerHTML = scenes.map((scene, index) => (
-        `<button class="chip ${index === 0 ? "active" : ""}" type="button" data-scene="${scene}">${scene}</button>`
-      )).join("");
+    function weekday(iso) {
+      const days = ['周日','周一','周二','周三','周四','周五','周六'];
+      return days[new Date(`${iso}T00:00:00+08:00`).getDay()];
     }
 
-    function weatherForLook(look) {
-      return weeklyWeather[(Number(look.id) - 1) % weeklyWeather.length];
+    function weatherInfo(code) { return weatherCodeMap[code] || ['天气变化', 'cloudy']; }
+
+    async function loadWeather() {
+      const url = 'https://api.open-meteo.com/v1/forecast?latitude=26.0471&longitude=119.3035&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FShanghai&forecast_days=7';
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`weather ${res.status}`);
+        const data = await res.json();
+        const days = data.daily.time.map((date, index) => {
+          const [text, tag] = weatherInfo(data.daily.weather_code[index]);
+          return { date, text, tag, max: Math.round(data.daily.temperature_2m_max[index]), min: Math.round(data.daily.temperature_2m_min[index]), rain: data.daily.precipitation_probability_max[index] ?? 0 };
+        });
+        currentWeatherTag = days[0]?.tag || '';
+        renderWeather(days);
+      } catch (error) {
+        currentWeatherTag = '';
+        els.weatherNow.innerHTML = '<strong>天气暂时不可用</strong><span>实时天气读取失败，筛选仍可手动选择天气类型。</span>';
+        els.weatherStrip.innerHTML = '';
+      }
     }
 
-    function renderWeatherStrip() {
-      weatherStrip.innerHTML = weeklyWeather.map(day => `
+    function renderWeather(days) {
+      const today = days[0];
+      els.weatherNow.innerHTML = `<strong>今日 ${today.text} · ${today.min}-${today.max}C</strong><span>降水概率 ${today.rain}% · 数据来自 Open-Meteo，页面打开时实时读取。</span>`;
+      els.weatherStrip.innerHTML = days.map(day => `
         <div class="weather-day">
-          <div class="weather-date">${day.date}</div>
-          <div class="weather-meta">
-            <strong>${day.day} · ${day.text}</strong>
-            <span>${day.temp} · ${day.uv}</span><br>
-            <span>${day.cue}</span>
-          </div>
+          <div class="weather-date">${formatDate(day.date)}</div>
+          <div><b>${weekday(day.date)} · ${day.text}</b><span>${day.min}-${day.max}C · 降水 ${day.rain}%</span></div>
         </div>
-      `).join("");
+      `).join('');
     }
 
-    function renderCards(activeScene = "全部") {
-      const items = activeScene === "全部" ? looks : looks.filter(look => look.scene === activeScene);
-      gallery.innerHTML = items.map(look => {
-        const topColor = colorFor(look.top);
-        const bottomColor = colorFor(look.bottom);
-        const shoeColor = colorFor(look.shoe);
-        const bagColor = colorFor(look.bag);
-        const extraColor = colorFor(look.extra);
-        const image = lookImages[look.id];
-        const weather = weatherForLook(look);
-        const visual = image ? `
-            <div class="fit-visual photo-frame">
-              <img class="look-photo" src="${image}" alt="Look ${look.id} ${look.scene}">
-            </div>
-        ` : `
-            <div class="fit-visual" aria-hidden="true">
-              <div class="figure">
-                <i class="top-shape"></i>
-                <i class="pants-shape"></i>
-                <i class="shoe-line"></i>
-              </div>
-              <div class="swatches">
-                <i class="swatch" style="--c:${topColor}" data-label="上衣"></i>
-                <i class="swatch" style="--c:${bottomColor}" data-label="下装"></i>
-                <i class="swatch" style="--c:${shoeColor}" data-label="鞋"></i>
-                <i class="swatch" style="--c:${bagColor}" data-label="包"></i>
-                <i class="swatch" style="--c:${extraColor}" data-label="配饰"></i>
-              </div>
-            </div>
-        `;
+    function buildSelect(select, entries, selected = 'all') {
+      select.innerHTML = entries.map(([value, label]) => `<option value="${value}" ${value === selected ? 'selected' : ''}>${label}</option>`).join('');
+    }
 
+    function initControls() {
+      const scenes = [...new Set(DATA.looks.map(look => look.scene))].sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
+      const seasons = [...new Set(DATA.looks.flatMap(look => look.season))];
+      const colors = [...new Set(DATA.items.flatMap(item => item.colors))].sort();
+      buildSelect(els.seasonFilter, [['all', '全部季节'], ...seasons.map(key => [key, labelFrom(seasonLabels, key)])]);
+      buildSelect(els.weatherFilter, Object.entries(weatherLabels));
+      buildSelect(els.sceneFilter, [['all', '全部场景'], ...scenes.map(scene => [scene, scene])]);
+      buildSelect(els.colorFilter, [['all', '全部颜色'], ...colors.map(key => [key, labelFrom(colorLabels, key)])]);
+      renderCategoryFilters();
+      renderItemFilters();
+    }
+
+    function renderCategoryFilters() {
+      const categories = ['all', 'tops', 'outerwear', 'bottoms', 'shoes', 'bags', 'accessories'];
+      els.categoryFilters.innerHTML = categories.map(category => `<button class="chip ${category === activeCategory ? 'active' : ''}" type="button" data-category="${category}">${categoryLabels[category]}</button>`).join('');
+    }
+
+    function renderItemFilters() {
+      const query = els.itemSearch.value.trim().toLowerCase();
+      const items = DATA.items.filter(item => item.enabled)
+        .filter(item => activeCategory === 'all' || item.category === activeCategory)
+        .filter(item => !query || item.name.toLowerCase().includes(query));
+      els.itemFilters.innerHTML = items.map(item => `<button class="chip ${selectedItemIds.has(item.id) ? 'active' : ''}" type="button" data-item="${item.id}">${item.name}</button>`).join('');
+      renderSelectedItems();
+    }
+
+    function renderSelectedItems() {
+      const selected = [...selectedItemIds].map(itemById).filter(Boolean);
+      els.selectedItems.innerHTML = selected.map(item => `<button class="chip" type="button" data-remove-item="${item.id}">${item.name} ×</button>`).join('');
+    }
+
+    function lookMatches(look) {
+      const season = els.seasonFilter.value;
+      const weather = els.weatherFilter.value;
+      const scene = els.sceneFilter.value;
+      const color = els.colorFilter.value;
+      if (season !== 'all' && !look.season.includes(season)) return false;
+      if (weather !== 'all' && !look.weatherTags.includes(weather)) return false;
+      if (scene !== 'all' && look.scene !== scene) return false;
+      if ([...selectedItemIds].some(id => !look.items.includes(id))) return false;
+      if (color !== 'all') {
+        const hasColor = look.items.some(id => itemById(id)?.colors.includes(color));
+        if (!hasColor) return false;
+      }
+      return true;
+    }
+
+    function renderCards() {
+      const items = DATA.looks.filter(lookMatches);
+      els.gallery.innerHTML = items.map(look => {
+        const usedItems = look.items.map(itemById).filter(Boolean);
         return `
-          <article class="card" style="--top:${topColor}; --bottom:${bottomColor}; --shoe:${shoeColor}">
+          <article class="card">
             <header class="card-head">
               <div class="id">${look.id}</div>
-              <div class="scene">${look.scene}<br>Louis Summer Capsule</div>
+              <div class="scene">${look.scene}<br>${look.season.map(key => labelFrom(seasonLabels, key)).join(' / ')}</div>
             </header>
-            ${visual}
+            <div class="fit-visual"><img class="look-photo" src="${look.image}" alt="${look.title} ${look.scene}"></div>
             <div class="details">
-              <div class="weather-pill"><b>天气</b><span>${weather.date} ${weather.day} · ${weather.text} · ${weather.temp} · ${weather.uv}</span></div>
-              <div class="row"><b>上衣</b><span>${look.top}</span></div>
-              <div class="row"><b>下装</b><span>${look.bottom}</span></div>
-              <div class="row"><b>鞋</b><span>${look.shoe}</span></div>
-              <div class="row"><b>包</b><span>${look.bag}</span></div>
-              <div class="row"><b>配饰</b><span>${look.extra}</span></div>
+              <div class="row"><b>上衣</b><span>${look.slots.top}</span></div>
+              <div class="row"><b>下装</b><span>${look.slots.bottom}</span></div>
+              <div class="row"><b>鞋</b><span>${look.slots.shoe}</span></div>
+              <div class="row"><b>包</b><span>${look.slots.bag}</span></div>
+              <div class="row"><b>配饰</b><span>${look.slots.extra}</span></div>
+              <div class="tags">${look.weatherTags.map(tag => `<span class="tag">${labelFrom(weatherLabels, tag)}</span>`).join('')}${usedItems.slice(0, 4).map(item => `<span class="tag">${item.name}</span>`).join('')}</div>
               <div class="note">${look.note}</div>
             </div>
           </article>
         `;
-      }).join("");
-
-      visibleCount.textContent = items.length;
-      empty.style.display = items.length ? "none" : "block";
+      }).join('');
+      els.visibleCount.textContent = items.length;
+      els.empty.style.display = items.length ? 'none' : 'block';
+      renderSummary(items.length);
     }
 
-    renderFilters();
-    renderWeatherStrip();
-    renderCards();
+    function renderSummary(count) {
+      const itemText = selectedItemIds.size ? `已选 ${selectedItemIds.size} 个单品` : '未选择单品';
+      const weatherText = els.weatherFilter.value === 'all' ? '全部天气' : labelFrom(weatherLabels, els.weatherFilter.value);
+      els.activeSummary.textContent = `${count} 套 Look · ${itemText} · ${weatherText}`;
+    }
 
-    filters.addEventListener("click", event => {
-      const button = event.target.closest("button[data-scene]");
+    function resetFilters() {
+      selectedItemIds.clear();
+      activeCategory = 'all';
+      els.itemSearch.value = '';
+      els.seasonFilter.value = 'all';
+      els.weatherFilter.value = 'all';
+      els.sceneFilter.value = 'all';
+      els.colorFilter.value = 'all';
+      renderCategoryFilters();
+      renderItemFilters();
+      renderCards();
+    }
+
+    async function init() {
+      const [itemsRes, looksRes] = await Promise.all([fetch('data/items.json'), fetch('data/looks.json')]);
+      DATA.items = await itemsRes.json();
+      DATA.looks = await looksRes.json();
+      els.lookCount.textContent = DATA.looks.length;
+      els.itemCount.textContent = DATA.items.length;
+      initControls();
+      renderCards();
+      loadWeather();
+    }
+
+    els.categoryFilters.addEventListener('click', event => {
+      const button = event.target.closest('[data-category]');
       if (!button) return;
-      filters.querySelectorAll(".chip").forEach(chip => chip.classList.remove("active"));
-      button.classList.add("active");
-      renderCards(button.dataset.scene);
+      activeCategory = button.dataset.category;
+      renderCategoryFilters();
+      renderItemFilters();
     });
 
-    document.querySelector("#showAll").addEventListener("click", () => {
-      filters.querySelectorAll(".chip").forEach(chip => chip.classList.toggle("active", chip.dataset.scene === "全部"));
+    els.itemFilters.addEventListener('click', event => {
+      const button = event.target.closest('[data-item]');
+      if (!button) return;
+      const id = button.dataset.item;
+      selectedItemIds.has(id) ? selectedItemIds.delete(id) : selectedItemIds.add(id);
+      renderItemFilters();
       renderCards();
     });
 
-    document.querySelector("#printBtn").addEventListener("click", () => window.print());
+    els.selectedItems.addEventListener('click', event => {
+      const button = event.target.closest('[data-remove-item]');
+      if (!button) return;
+      selectedItemIds.delete(button.dataset.removeItem);
+      renderItemFilters();
+      renderCards();
+    });
+
+    els.itemSearch.addEventListener('input', renderItemFilters);
+    [els.seasonFilter, els.weatherFilter, els.sceneFilter, els.colorFilter].forEach(select => select.addEventListener('change', renderCards));
+    document.querySelector('#resetBtn').addEventListener('click', resetFilters);
+    document.querySelector('#clearItemsBtn').addEventListener('click', () => { selectedItemIds.clear(); renderItemFilters(); renderCards(); });
+    document.querySelector('#todayBtn').addEventListener('click', () => { if (currentWeatherTag) { els.weatherFilter.value = currentWeatherTag; renderCards(); } });
+    document.querySelector('#printBtn').addEventListener('click', () => window.print());
+
+    init().catch(error => {
+      els.activeSummary.textContent = '数据加载失败，请检查 data/items.json 和 data/looks.json。';
+      els.empty.style.display = 'block';
+      els.empty.textContent = String(error.message || error);
+    });
   </script>
 </body>
 </html>

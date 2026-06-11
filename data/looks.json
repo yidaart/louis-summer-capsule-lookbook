@@ -1,0 +1,2370 @@
+[
+  {
+    "id": "01",
+    "title": "Look 01",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_001",
+      "item_002",
+      "item_003",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-01.jpg",
+    "note": "黑 T + 黑西裤压住成熟感，棕色鞋把气氛放松。"
+  },
+  {
+    "id": "02",
+    "title": "Look 02",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "炭灰直筒裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_001",
+      "item_006",
+      "item_007",
+      "item_008",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-02.jpg",
+    "note": "黑灰同色系，适合不用想的上班日。"
+  },
+  {
+    "id": "03",
+    "title": "Look 03",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_001",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-03.jpg",
+    "note": "城市机能感最稳的一套，干净但有户外味。"
+  },
+  {
+    "id": "04",
+    "title": "Look 04",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "卡其宽松长裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_001",
+      "item_013",
+      "item_003",
+      "item_008",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-04.jpg",
+    "note": "黑上衣收住轮廓，卡其裤负责松弛。"
+  },
+  {
+    "id": "05",
+    "title": "Look 05",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_001",
+      "item_015",
+      "item_007",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-05.jpg",
+    "note": "偏日杂的宽裤 Look，舒服但不邋遢。"
+  },
+  {
+    "id": "06",
+    "title": "Look 06",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻复古",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "浅米竖纹宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_001",
+      "item_016",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-06.jpg",
+    "note": "上黑下浅，金绿表盘增加一点复古感。"
+  },
+  {
+    "id": "07",
+    "title": "Look 07",
+    "season": [
+      "summer"
+    ],
+    "scene": "雨天防晒",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_001",
+      "item_018",
+      "item_007",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-07.jpg",
+    "note": "黑色底层配军绿外层，轻机能清爽。"
+  },
+  {
+    "id": "08",
+    "title": "Look 08",
+    "season": [
+      "summer"
+    ],
+    "scene": "饭局约会",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_001",
+      "item_020",
+      "item_011",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-08.jpg",
+    "note": "深咖强化成熟感，卫裤保留松弛。"
+  },
+  {
+    "id": "09",
+    "title": "Look 09",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "灰色 646 卫裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_001",
+      "item_021",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-09.jpg",
+    "note": "运动感更强，适合高走动量的一天。"
+  },
+  {
+    "id": "10",
+    "title": "Look 10",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "深咖宽松短裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_001",
+      "item_024",
+      "item_003",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny",
+      "weekend"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-10.jpg",
+    "note": "短裤只做低频点缀，配黑 T 更稳。"
+  },
+  {
+    "id": "11",
+    "title": "Look 11",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_001",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-11.jpg",
+    "note": "全身深色但材质轻，适合暴晒外出。"
+  },
+  {
+    "id": "12",
+    "title": "Look 12",
+    "season": [
+      "summer"
+    ],
+    "scene": "通勤备用",
+    "slots": {
+      "top": "黑色重磅圆领 T",
+      "bottom": "炭灰直筒裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_001",
+      "item_006",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-12.jpg",
+    "note": "鞋和表带出一点暖色，不会显得太硬。"
+  },
+  {
+    "id": "13",
+    "title": "Look 13",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "黑色垂感西裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_027",
+      "item_002",
+      "item_007",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-13.jpg",
+    "note": "最干净的夏日通勤公式，白 T 提气色。"
+  },
+  {
+    "id": "14",
+    "title": "Look 14",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "炭灰直筒裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_027",
+      "item_006",
+      "item_003",
+      "item_004",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-14.jpg",
+    "note": "奶油白比纯白柔和，和炭灰更日系。"
+  },
+  {
+    "id": "15",
+    "title": "Look 15",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "军绿微工装裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_027",
+      "item_010",
+      "item_007",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-15.jpg",
+    "note": "白 T 让军绿不显脏，整体更城市。"
+  },
+  {
+    "id": "16",
+    "title": "Look 16",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "卡其宽松长裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_027",
+      "item_013",
+      "item_003",
+      "item_008",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-16.jpg",
+    "note": "浅色系的日杂主力，注意用黑包压住。"
+  },
+  {
+    "id": "17",
+    "title": "Look 17",
+    "season": [
+      "summer"
+    ],
+    "scene": "日杂宽裤",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_027",
+      "item_015",
+      "item_007",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-17.jpg",
+    "note": "宽裤负责空气感，灰褐色比卡其更成熟。"
+  },
+  {
+    "id": "18",
+    "title": "Look 18",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻复古",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "浅米竖纹宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_027",
+      "item_016",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-18.jpg",
+    "note": "浅色叠浅色，适合干净天气和咖啡场景。"
+  },
+  {
+    "id": "19",
+    "title": "Look 19",
+    "season": [
+      "summer"
+    ],
+    "scene": "雨天防晒",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_027",
+      "item_018",
+      "item_011",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-19.jpg",
+    "note": "白、黑、军绿三色平衡，耐看。"
+  },
+  {
+    "id": "20",
+    "title": "Look 20",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "灰色 646 卫裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_027",
+      "item_021",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-20.jpg",
+    "note": "鞋子有运动复古元素，其他单品保持安静。"
+  },
+  {
+    "id": "21",
+    "title": "Look 21",
+    "season": [
+      "summer"
+    ],
+    "scene": "饭局约会",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_027",
+      "item_020",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-21.jpg",
+    "note": "深咖和金绿表盘呼应，轻熟但不商务。"
+  },
+  {
+    "id": "22",
+    "title": "Look 22",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "奶油白重磅圆领 T",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_027",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-22.jpg",
+    "note": "上白下蓝，夏天感更明确。"
+  },
+  {
+    "id": "23",
+    "title": "Look 23",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_028",
+      "item_002",
+      "item_003",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-23.jpg",
+    "note": "针织比 T 更有质感，适合稍正式的一天。"
+  },
+  {
+    "id": "24",
+    "title": "Look 24",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "卡其宽松长裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_028",
+      "item_013",
+      "item_007",
+      "item_004",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-24.jpg",
+    "note": "炭灰配卡其，低调但有层次。"
+  },
+  {
+    "id": "25",
+    "title": "Look 25",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_028",
+      "item_015",
+      "item_003",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-25.jpg",
+    "note": "同属灰褐体系，鞋用棕色补温度。"
+  },
+  {
+    "id": "26",
+    "title": "Look 26",
+    "season": [
+      "summer"
+    ],
+    "scene": "日杂宽裤",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "浅米竖纹宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_028",
+      "item_016",
+      "item_007",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-26.jpg",
+    "note": "上深下浅，竖纹宽裤让比例更轻。"
+  },
+  {
+    "id": "27",
+    "title": "Look 27",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_028",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-27.jpg",
+    "note": "针织上衣中和工装裤的硬度。"
+  },
+  {
+    "id": "28",
+    "title": "Look 28",
+    "season": [
+      "summer"
+    ],
+    "scene": "饭局约会",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_028",
+      "item_020",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-28.jpg",
+    "note": "深色针织 + 深咖裤，低调成熟。"
+  },
+  {
+    "id": "29",
+    "title": "Look 29",
+    "season": [
+      "summer"
+    ],
+    "scene": "雨天防晒",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_028",
+      "item_018",
+      "item_007",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-29.jpg",
+    "note": "外层军绿只露一点，增强轻机能。"
+  },
+  {
+    "id": "30",
+    "title": "Look 30",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "灰色 646 卫裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_028",
+      "item_021",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-30.jpg",
+    "note": "针织提升卫裤质感，避免太居家。"
+  },
+  {
+    "id": "31",
+    "title": "Look 31",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "炭灰短袖针织",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_028",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-31.jpg",
+    "note": "蓝灰组合安静，适合户外通勤。"
+  },
+  {
+    "id": "32",
+    "title": "Look 32",
+    "season": [
+      "summer"
+    ],
+    "scene": "饭局约会",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_029",
+      "item_002",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-32.jpg",
+    "note": "最接近轻熟饭局的一套，鞋子保留休闲。"
+  },
+  {
+    "id": "33",
+    "title": "Look 33",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "炭灰直筒裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_029",
+      "item_006",
+      "item_007",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-33.jpg",
+    "note": "古巴领比普通衬衫松弛，适合夏天。"
+  },
+  {
+    "id": "34",
+    "title": "Look 34",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "浅米竖纹宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_029",
+      "item_016",
+      "item_003",
+      "item_008",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-34.jpg",
+    "note": "黑衬衫和浅米裤形成清楚轮廓。"
+  },
+  {
+    "id": "35",
+    "title": "Look 35",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻复古",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_029",
+      "item_020",
+      "item_011",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-35.jpg",
+    "note": "黑咖组合偏复古，适合晚上出门。"
+  },
+  {
+    "id": "36",
+    "title": "Look 36",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_029",
+      "item_015",
+      "item_003",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-36.jpg",
+    "note": "衬衫和宽裤组合，有通勤感但不紧。"
+  },
+  {
+    "id": "37",
+    "title": "Look 37",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "军绿微工装裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_029",
+      "item_010",
+      "item_007",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-37.jpg",
+    "note": "古巴领让工装裤更城市，不像纯户外。"
+  },
+  {
+    "id": "38",
+    "title": "Look 38",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_029",
+      "item_018",
+      "item_011",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-38.jpg",
+    "note": "全身深色，用材质差异做层次。"
+  },
+  {
+    "id": "39",
+    "title": "Look 39",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_029",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-39.jpg",
+    "note": "衬衫和短裤的反差，适合低频穿。"
+  },
+  {
+    "id": "40",
+    "title": "Look 40",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "黑色垂感西裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_030",
+      "item_002",
+      "item_007",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-40.jpg",
+    "note": "POLO 是质感主力，比 T 更完整。"
+  },
+  {
+    "id": "41",
+    "title": "Look 41",
+    "season": [
+      "summer"
+    ],
+    "scene": "饭局约会",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_030",
+      "item_020",
+      "item_003",
+      "item_004",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-41.jpg",
+    "note": "明线细节增加精致度，深咖偏成熟。"
+  },
+  {
+    "id": "42",
+    "title": "Look 42",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "炭灰直筒裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_030",
+      "item_006",
+      "item_003",
+      "item_008",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-42.jpg",
+    "note": "黑灰主线，适合重要但非正式的日子。"
+  },
+  {
+    "id": "43",
+    "title": "Look 43",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_030",
+      "item_015",
+      "item_007",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-43.jpg",
+    "note": "翻领和宽裤让整体松弛但有边界。"
+  },
+  {
+    "id": "44",
+    "title": "Look 44",
+    "season": [
+      "summer"
+    ],
+    "scene": "日杂宽裤",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "浅米竖纹宽裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_030",
+      "item_016",
+      "item_003",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-44.jpg",
+    "note": "黑上浅下，最像日杂目录的一套。"
+  },
+  {
+    "id": "45",
+    "title": "Look 45",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_030",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-45.jpg",
+    "note": "质感上衣压住工装裤，适合城市走动。"
+  },
+  {
+    "id": "46",
+    "title": "Look 46",
+    "season": [
+      "summer"
+    ],
+    "scene": "雨天防晒",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_030",
+      "item_018",
+      "item_007",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-46.jpg",
+    "note": "黑色底盘，军绿外套只负责功能和层次。"
+  },
+  {
+    "id": "47",
+    "title": "Look 47",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+      "bottom": "灰色 646 卫裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_030",
+      "item_021",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-47.jpg",
+    "note": "把复古板鞋作为唯一跳点。"
+  },
+  {
+    "id": "48",
+    "title": "Look 48",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_031",
+      "item_002",
+      "item_003",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-48.jpg",
+    "note": "浅色针织配黑西裤，清爽又稳。"
+  },
+  {
+    "id": "49",
+    "title": "Look 49",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "炭灰直筒裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_031",
+      "item_006",
+      "item_007",
+      "item_004",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-49.jpg",
+    "note": "比白 T 更有质感，通勤优先级高。"
+  },
+  {
+    "id": "50",
+    "title": "Look 50",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "卡其宽松长裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_031",
+      "item_013",
+      "item_003",
+      "item_008",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-50.jpg",
+    "note": "暖色系成套穿，用黑包做收口。"
+  },
+  {
+    "id": "51",
+    "title": "Look 51",
+    "season": [
+      "summer"
+    ],
+    "scene": "日杂宽裤",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_031",
+      "item_015",
+      "item_007",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-51.jpg",
+    "note": "低饱和浅色组合，很适合白天。"
+  },
+  {
+    "id": "52",
+    "title": "Look 52",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻复古",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_031",
+      "item_020",
+      "item_003",
+      "item_008",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-52.jpg",
+    "note": "杏色和深咖是最稳的轻复古配色。"
+  },
+  {
+    "id": "53",
+    "title": "Look 53",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_031",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-53.jpg",
+    "note": "米色针织让军绿更柔和。"
+  },
+  {
+    "id": "54",
+    "title": "Look 54",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "灰色 646 卫裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_031",
+      "item_021",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-54.jpg",
+    "note": "舒适优先，但翻领避免太随便。"
+  },
+  {
+    "id": "55",
+    "title": "Look 55",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "浅杏 / 奶油米翻领短袖针织",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_031",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-55.jpg",
+    "note": "奶油米和藏蓝对比干净。"
+  },
+  {
+    "id": "56",
+    "title": "Look 56",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "黑色垂感西裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_032",
+      "item_002",
+      "item_007",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-56.jpg",
+    "note": "鼠尾草绿给黑西裤降正式感。"
+  },
+  {
+    "id": "57",
+    "title": "Look 57",
+    "season": [
+      "summer"
+    ],
+    "scene": "日常通勤",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "炭灰直筒裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_032",
+      "item_006",
+      "item_003",
+      "item_004",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-57.jpg",
+    "note": "低饱和绿灰配炭灰，很耐看。"
+  },
+  {
+    "id": "58",
+    "title": "Look 58",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "灰褐色松紧腰打褶宽裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_032",
+      "item_015",
+      "item_007",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-58.jpg",
+    "note": "接近自然色系，但还是城市。"
+  },
+  {
+    "id": "59",
+    "title": "Look 59",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻机能",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_032",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-59.jpg",
+    "note": "同色系绿要靠黑包和深咖鞋压住。"
+  },
+  {
+    "id": "60",
+    "title": "Look 60",
+    "season": [
+      "summer"
+    ],
+    "scene": "松弛通勤",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "卡其宽松长裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_032",
+      "item_013",
+      "item_003",
+      "item_008",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-60.jpg",
+    "note": "卡其和绿灰的夏季通勤组合。"
+  },
+  {
+    "id": "61",
+    "title": "Look 61",
+    "season": [
+      "summer"
+    ],
+    "scene": "轻复古",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "深咖微喇卫裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_032",
+      "item_020",
+      "item_003",
+      "item_004",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "evening"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-61.jpg",
+    "note": "绿灰和深咖偏复古，表盘可呼应。"
+  },
+  {
+    "id": "62",
+    "title": "Look 62",
+    "season": [
+      "summer"
+    ],
+    "scene": "雨天防晒",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_032",
+      "item_018",
+      "item_007",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-62.jpg",
+    "note": "绿外套和绿 T 有层次，不做同色套装。"
+  },
+  {
+    "id": "63",
+    "title": "Look 63",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "灰色背后印花 T",
+      "bottom": "黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_033",
+      "item_002",
+      "item_003",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-63.jpg",
+    "note": "印花只做背面变化，正面仍然干净。"
+  },
+  {
+    "id": "64",
+    "title": "Look 64",
+    "season": [
+      "summer"
+    ],
+    "scene": "短途出行",
+    "slots": {
+      "top": "藏蓝背后印花 T",
+      "bottom": "卡其宽松长裤",
+      "shoe": "白蓝红棒球元素复古板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 FreeClip 2 耳夹耳机"
+    },
+    "items": [
+      "item_034",
+      "item_013",
+      "item_022",
+      "item_004",
+      "item_023"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-64.jpg",
+    "note": "藏蓝呼应鞋面蓝色，适合周末。"
+  },
+  {
+    "id": "65",
+    "title": "Look 65",
+    "season": [
+      "summer"
+    ],
+    "scene": "周末城市",
+    "slots": {
+      "top": "灰色李小龙印花 T",
+      "bottom": "军绿微工装裤",
+      "shoe": "深咖复古机能运动鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_035",
+      "item_010",
+      "item_011",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "weekend"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-65.jpg",
+    "note": "印花有个性，裤鞋保持低饱和。"
+  },
+  {
+    "id": "66",
+    "title": "Look 66",
+    "season": [
+      "summer"
+    ],
+    "scene": "低频点缀",
+    "slots": {
+      "top": "水洗粉色宽松短袖 T",
+      "bottom": "炭灰直筒裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "雪铁纳 PH200M 蓝盘米兰钢带"
+    },
+    "items": [
+      "item_036",
+      "item_006",
+      "item_007",
+      "item_004",
+      "item_005"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-66.jpg",
+    "note": "粉色只做单点，裤鞋包全部降噪。"
+  },
+  {
+    "id": "67",
+    "title": "Look 67",
+    "season": [
+      "summer"
+    ],
+    "scene": "层次点缀",
+    "slots": {
+      "top": "黑色 V 领无袖针织背心",
+      "bottom": "奶油白重磅圆领 T + 黑色垂感西裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色皮质托特 / 斜挎包",
+      "extra": "透明灰浅茶镜片窄矩形眼镜"
+    },
+    "items": [
+      "item_037",
+      "item_027",
+      "item_002",
+      "item_003",
+      "item_008",
+      "item_009"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-67.jpg",
+    "note": "背心低频使用，叠白 T 更干净。"
+  },
+  {
+    "id": "68",
+    "title": "Look 68",
+    "season": [
+      "summer"
+    ],
+    "scene": "层次点缀",
+    "slots": {
+      "top": "黑色 V 领无袖针织背心",
+      "bottom": "浅米竖纹宽裤 + 奶油白重磅圆领 T",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "小号银色耳环 / 耳圈"
+    },
+    "items": [
+      "item_037",
+      "item_016",
+      "item_027",
+      "item_007",
+      "item_004",
+      "item_014"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-68.jpg",
+    "note": "上身有层次，下身用浅米宽裤提轻。"
+  },
+  {
+    "id": "69",
+    "title": "Look 69",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "灰色背后印花 T",
+      "bottom": "黑色兰精天丝微喇运动裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "军绿轻薄防晒衣"
+    },
+    "items": [
+      "item_033",
+      "item_018",
+      "item_007",
+      "item_004",
+      "item_019"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "image": "assets/louis-summer-looks/look-69.jpg",
+    "note": "灰黑底盘加军绿外套，实用优先。"
+  },
+  {
+    "id": "70",
+    "title": "Look 70",
+    "season": [
+      "summer"
+    ],
+    "scene": "短裤低频",
+    "slots": {
+      "top": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+      "bottom": "深咖宽松短裤",
+      "shoe": "棕色德训鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "华为 GT2 Pro 运动手表"
+    },
+    "items": [
+      "item_032",
+      "item_024",
+      "item_003",
+      "item_004",
+      "item_012"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-70.jpg",
+    "note": "短裤和绿 T 有休闲感，鞋包保持成熟。"
+  },
+  {
+    "id": "71",
+    "title": "Look 71",
+    "season": [
+      "summer"
+    ],
+    "scene": "短裤低频",
+    "slots": {
+      "top": "黑色古巴领衬衫",
+      "bottom": "深咖宽松短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "天梭金表绿盘"
+    },
+    "items": [
+      "item_029",
+      "item_024",
+      "item_007",
+      "item_004",
+      "item_017"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-71.jpg",
+    "note": "短裤搭衬衫，适合傍晚或旅行场景。"
+  },
+  {
+    "id": "72",
+    "title": "Look 72",
+    "season": [
+      "summer"
+    ],
+    "scene": "防晒出门",
+    "slots": {
+      "top": "藏蓝背后印花 T",
+      "bottom": "深藏蓝轻薄防晒短裤",
+      "shoe": "灰白 gum 底德训 / 板鞋",
+      "bag": "黑色软皮月牙单肩斜挎包",
+      "extra": "深藏蓝轻薄防晒外套（连帽）"
+    },
+    "items": [
+      "item_034",
+      "item_025",
+      "item_007",
+      "item_004",
+      "item_026"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "image": "assets/louis-summer-looks/look-72.jpg",
+    "note": "藏蓝成套时，用灰白鞋打破沉闷。"
+  }
+]

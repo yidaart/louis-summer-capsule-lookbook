@@ -1,0 +1,905 @@
+[
+  {
+    "id": "item_001",
+    "name": "黑色重磅圆领 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_002",
+    "name": "黑色垂感西裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_003",
+    "name": "棕色德训鞋",
+    "category": "shoes",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "styleTags": [
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_004",
+    "name": "黑色软皮月牙单肩斜挎包",
+    "category": "bags",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_005",
+    "name": "雪铁纳 PH200M 蓝盘米兰钢带",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "beige",
+      "blue"
+    ],
+    "styleTags": [
+      "detail"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_006",
+    "name": "炭灰直筒裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "charcoal"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_007",
+    "name": "灰白 gum 底德训 / 板鞋",
+    "category": "shoes",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "styleTags": [
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_008",
+    "name": "黑色皮质托特 / 斜挎包",
+    "category": "bags",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_009",
+    "name": "透明灰浅茶镜片窄矩形眼镜",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "styleTags": [
+      "detail"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_010",
+    "name": "军绿微工装裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "olive"
+    ],
+    "styleTags": [
+      "light-functional"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_011",
+    "name": "深咖复古机能运动鞋",
+    "category": "shoes",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "coffee"
+    ],
+    "styleTags": [
+      "light-functional",
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_012",
+    "name": "华为 GT2 Pro 运动手表",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "neutral"
+    ],
+    "styleTags": [
+      "detail"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_013",
+    "name": "卡其宽松长裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "khaki"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_014",
+    "name": "小号银色耳环 / 耳圈",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "silver"
+    ],
+    "styleTags": [
+      "detail"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_015",
+    "name": "灰褐色松紧腰打褶宽裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "greige"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_016",
+    "name": "浅米竖纹宽裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_017",
+    "name": "天梭金表绿盘",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "green"
+    ],
+    "styleTags": [
+      "detail",
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_018",
+    "name": "黑色兰精天丝微喇运动裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_019",
+    "name": "军绿轻薄防晒衣",
+    "category": "outerwear",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "olive"
+    ],
+    "styleTags": [
+      "detail",
+      "light-functional"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "rain",
+      "sunny"
+    ],
+    "temperatureC": [
+      22,
+      34
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_020",
+    "name": "深咖微喇卫裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "coffee"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_021",
+    "name": "灰色 646 卫裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_022",
+    "name": "白蓝红棒球元素复古板鞋",
+    "category": "shoes",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "neutral"
+    ],
+    "styleTags": [
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_023",
+    "name": "华为 FreeClip 2 耳夹耳机",
+    "category": "accessories",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "neutral"
+    ],
+    "styleTags": [
+      "detail"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_024",
+    "name": "深咖宽松短裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "coffee"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_025",
+    "name": "深藏蓝轻薄防晒短裤",
+    "category": "bottoms",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "styleTags": [
+      "light-functional",
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_026",
+    "name": "深藏蓝轻薄防晒外套（连帽）",
+    "category": "outerwear",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "styleTags": [
+      "detail",
+      "light-functional"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      22,
+      34
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_027",
+    "name": "奶油白重磅圆领 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute",
+      "sunny"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_028",
+    "name": "炭灰短袖针织",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "charcoal"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_029",
+    "name": "黑色古巴领衬衫",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "retro"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_030",
+    "name": "黑色撞色明线翻领短袖针织 / 针织 POLO",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_031",
+    "name": "浅杏 / 奶油米翻领短袖针织",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "cream",
+      "beige"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_032",
+    "name": "橄榄灰 / 鼠尾草绿色纯色短袖 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "olive",
+      "sage"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_033",
+    "name": "灰色背后印花 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_034",
+    "name": "藏蓝背后印花 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_035",
+    "name": "灰色李小龙印花 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "styleTags": [
+      "daily"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_036",
+    "name": "水洗粉色宽松短袖 T",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "pink"
+    ],
+    "styleTags": [
+      "relaxed"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      24,
+      36
+    ],
+    "level": "active",
+    "enabled": true
+  },
+  {
+    "id": "item_037",
+    "name": "黑色 V 领无袖针织背心",
+    "category": "tops",
+    "season": [
+      "summer"
+    ],
+    "colors": [
+      "black"
+    ],
+    "styleTags": [
+      "commute"
+    ],
+    "weatherTags": [
+      "cloudy",
+      "commute"
+    ],
+    "temperatureC": [
+      28,
+      38
+    ],
+    "level": "active",
+    "enabled": true
+  }
+]
